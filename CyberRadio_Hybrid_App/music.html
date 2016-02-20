@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+     <link href="css/app.css" rel="stylesheet"/>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>    
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>  
+    <script src="operation.js"></script>
+    
+    </head>
+    <body>
+        <div data-role="page" id="music">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h3>Play your Music</h3>
+            </div>
+            <div data-role="content">
+            <ul data-role="listview" data-theme="a" id="test-listview">
+                
+                <div class="row">
+        <div class="col-lg-12 col-lg-offset-3 col-sm-12 col-sm-offset-3">
+    <button class="btn btn-success btn-lg"  id="play" name="play" value="play" onclick="playSound()">Play</button>
+    </div>
+    
+    <div class="col-sm-12 col-lg-offset-3 col-sm-12 col-sm-offset-3">
+    <button class="btn btn-danger btn-lg" type="button" id="pause" name="pause" value="pause" onclick="pauseAudio()">Pause</button>
+      </div>
+        <div class="col-sm-12 col-lg-offset-3 col-sm-12 col-sm-offset-3">
+    <button  class="btn btn-info" name="Increase" value="Increase Volume"onclick="volumeIncrease()">Volumne Up</button>
+      </div>
+        <div class="col-sm-12 col-lg-offset-3 col-sm-12 col-sm-offset-3">
+     <button  class="btn-info btn" name="Decrease" value="Decrease Volume"onclick="volumedecrease()">Volume Down</button>
+       </div>
+    </div>
+                
+                
+                </ul>
+            </div>
+        <div data-role="footer" data-position="fixed">
+           <center> Copyright @2016
+ </center>            </div>
+        </div>
+    
+    
+    
+    </body>
+
+</html>
